@@ -1,0 +1,388 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root {
+    --promary-clr: #0d6efd;
+}
+
+.container {
+    position: relative;
+    padding-inline: 2rem;
+    margin-inline: auto;
+    width: 80%;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 3rem;
+    line-height: 1.2;
+    display: block;
+    
+}
+
+input {
+    padding: 16px 20px;
+    font-size: 1.25rem;
+    font-weight: 400;
+    border: none;
+    border-radius: 8px;
+    background-color: white;
+    outline: none;
+    display: block;
+    color: #212529;
+    appearance: none;
+    width: 468px;
+    
+    &:focus {
+        box-shadow: 0px 1px 5px 1px #0d6efd;
+    }
+}
+
+button {
+    padding-inline: .75rem;
+    background-color: var(--promary-clr);
+    font-size: 1.25rem;
+    font-weight: 400;
+    border: none;
+    border-radius: .5rem;
+    opacity: .8;
+    margin-left: 1.5rem;
+}
+
+header {
+    padding-block: .5rem;
+    .container {
+        width: 90%;
+        .row_header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .sb {
+                text-decoration: none;
+                font-size: 20px;
+                color : black;
+                padding-block: 5px;
+                margin-right: 1rem;
+            }
+
+            .btn {
+                text-decoration: none;
+                font-size: 1rem;
+                color: white;
+                background-color: var(--promary-clr);
+                padding: 12px 16px;
+                border-radius: 4px;
+            }
+
+        }
+    }
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    background: url(https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/bg-masthead.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-block: 8rem;
+    display: flex;
+    align-items: center;
+    background-position: 0% 90%;
+    
+    background-color: rgba(28, 56, 94, 0.5);  /* <---> #1c375e rengi 50% seffaf */
+    background-blend-mode: multiply;
+
+
+
+        .row {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            text-align: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: auto;
+            padding-inline: 12px;
+
+
+            
+            div {
+               
+                div {
+                    display: flex;
+                    align-items: stretch;
+                    width: 100%;
+                    
+
+                }
+            }
+        }
+    
+}
+
+section {
+    padding-block: 112px;
+    background-color: #f8f9fa;
+
+    .container {
+        
+        .rowsc {
+            display: flex;
+            column-gap: 2rem;
+
+            .col {
+                margin-inline: auto;
+
+
+                div {
+                    
+
+                    .window {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: 7rem;
+                        width: 100%;
+
+                        i {
+
+                            font-size: 72px;
+                            color: var(--promary-clr);
+                        }
+                    }
+
+                    h4 {
+                        font-size: 28px;
+                        font-weight: 600;
+                        text-align: center;
+                        margin-bottom: .5rem;
+                    }
+
+                    p {
+                        font-size: 20px;
+                        font-weight: 100;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.showcase {
+    background-color: white;
+    padding: 0;
+
+    .container {
+        padding: 0;
+        width: 100%;
+
+        .row_shc {
+            display: grid;
+            
+            
+
+            .shc-info {
+                display: flex;
+                width: 100%;
+
+
+                .shc_img {
+                    height: 480px;
+                    
+
+                    img {
+
+                        background-size: cover;
+                        height: 480px;
+                        width: 760px;
+                        
+                        
+                    }
+                }
+                .info {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    padding: 112px;
+                    margin-block: 45px;
+
+
+                    h2 {
+                        font-size: 2rem;
+                        margin-bottom: .5rem;
+                    }
+
+                    p {
+                        font-size: 1.25rem;
+                        font-weight: 200;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.people-section {
+    padding-block: 112px;
+   
+
+    .container {
+        
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .row {
+            display: flex;
+
+
+            .col {
+                padding-inline: .75rem;
+                width: 100%;
+
+
+                .ps-item {
+                    margin-inline: 4rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+
+                    img {
+                        width: 192px;
+                        height: 192px;
+                        border-radius: 50%;
+                        margin-bottom: 1rem;
+                        box-shadow: 0px 5px 5px 0px #adb5db;
+                    }
+
+                    h5 {
+                        font-size: 1.25rem;
+                        margin-bottom: .5rem;
+                    }
+
+                    p {
+                        font-size: 1rem;
+                        font-weight: 400;
+                        
+                    }
+                }
+            }
+        }
+
+    }
+
+}
+
+.ready {
+    background: url(https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/bg-masthead.jpg) rgba(28, 56, 94, 0.5);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+    background-blend-mode: multiply;
+
+    .row_sign {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        text-align: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: auto;
+        padding-inline: 12px;
+
+
+        div {
+               
+            div {
+                display: flex;
+                align-items: stretch;
+                width: 100%;
+            }
+        }
+    }
+}
+
+footer {
+    padding-block: 4rem;
+
+    .container {
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+
+            .left {
+                display: flex;
+                flex-direction: column;
+                
+                ul {
+                    display: flex;
+                    list-style: none;
+                    margin-bottom: .5rem;
+
+                    li {
+                        &:not(:last-child) {
+                            margin-right: .5rem;
+                        }
+                        a {
+                            font-size: 1rem;
+                            color: var(--promary-clr);
+                        }
+
+                        .dot {
+                            margin-right: .5rem;
+                        }
+                    }
+                }
+
+                p {
+                    font-size: 14px;
+                    color: #6c757d;
+                }
+              
+            }
+
+            .right {
+
+                ul {
+                    display: flex;
+                    list-style: none;
+
+                    li {
+                        &:not(:last-child) {
+                            margin-right: 1.5rem;
+                        }
+                        
+                        a {
+                            i {
+                                font-size: 1.75rem;
+                                color: var(--promary-clr);
+                                transition: color 200ms ease-out;
+
+                                &:hover {
+                                    color: #064ab0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
